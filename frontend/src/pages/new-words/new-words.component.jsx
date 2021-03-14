@@ -5,7 +5,7 @@ export default function NewWords() {
     const placeholder = {"word": "loading...","type": "loading...","meaning": "loading...","example": "loading..."}
     const [words, setWords] = useState()
     const [current, setCurrent] = useState(0)    
-    fetch('http://my-json-server.typicode.com/Akashamba/word-game/words')
+    fetch('https://my-json-server.typicode.com/Akashamba/word-game/words')
     .then(response => response.json())
     .then(words => setWords(words))
     return (
