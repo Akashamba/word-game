@@ -28,6 +28,11 @@ db.commit()
 def Vals():
     c.execute('''select * from todo order by RANDOM() LIMIT 10''')
     data=c.fetchall()
+    words = []
+    for i in range(len(data)):
+        dct = {"word": data[i][3], "meaning": data[i][1], "example": data[i][0], "type": data[i][2]}
+        words.append(dct)
     db.commit()
-    return data
+    return words
 
+Vals()
