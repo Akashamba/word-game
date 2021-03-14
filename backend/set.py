@@ -87,5 +87,5 @@ def home():
 # @app.route('/api/v1/resources/books/all', methods=['GET'])
 # def api_all():
 #     return "Hello"
-
-app.run()
+if __name__ == '__main__':
+  app.run()
