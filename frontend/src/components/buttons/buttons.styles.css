@@ -16,7 +16,15 @@
     background-color: rgba(112, 250, 112, 0.3);
 }
 
+.known:hover {
+    background-color: rgba(112, 250, 112, 0.5);
+}
+
 .unknown {
     color: rgba(255,0,0, 1);
     background-color: rgba(248, 120, 120, 0.3);
+}
+
+.unknown:hover {
+    background-color: rgba(248, 120, 120, 0.5);
 }
