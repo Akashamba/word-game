@@ -1,10 +1,22 @@
 import React from 'react';
+import './buttons.styles.css'
 
-export default function Buttons() {
+function knownWord(current, setCurrent) {
+    // alert("known")
+    setCurrent(current+1)
+}
+
+function unknownWord(current, setCurrent) {
+    // alert("unknown")
+    setCurrent(current+1)
+}
+
+export default function Buttons({current, setCurrent}) {
     return(
         <div className="buttons">
-        <button className="button known">I knew this word</button>
-        <button className="button new">I didn't know this Word</button>
+            <br/>
+            <div onClick={() => knownWord(current, setCurrent)} className="button known">I knew this word</div>
+            <div onClick={() => unknownWord(current, setCurrent)} className="button unknown">I didn't know this word</div>
         </div>
     )
 }
