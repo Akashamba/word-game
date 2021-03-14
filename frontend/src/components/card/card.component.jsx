@@ -1,8 +1,8 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './card.styles.css'
 
-export default function Card({word}) {
-    const [isFlipped, flip] = useState(false)
+export default function Card({word ,isFlipped, flip}) {
+    
     return (
         <div className="scene scene--card">
         <div className={`${isFlipped?'is-flipped':''} card`} onClick={() => flip(!isFlipped)}>
