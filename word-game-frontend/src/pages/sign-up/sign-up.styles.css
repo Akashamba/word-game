@@ -1,0 +1,22 @@
+.sign-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sign-up-in-button {
+    background-color: #f43b69;
+    color: #fff;
+    border-radius: 17px;
+    outline: none;
+}
+
+.sign-up-in-button:hover {
+    background-color: #921635;
+}
+
+.sign-up-in-title {
+    margin-left: 10px;
+    margin-right: 10px; 
+    text-align: center;
+}

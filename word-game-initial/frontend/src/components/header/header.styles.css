@@ -1,0 +1,9 @@
+.main-title, .sub-title {
+    display: inline-block;
+    margin: 20px 0 20px 20px;
+    color: #fff;
+}
+
+.header {
+    background-image: linear-gradient(to left, #f43b47 0%, #453a94 100%);
+}
